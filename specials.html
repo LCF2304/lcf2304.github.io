@@ -5,18 +5,41 @@ Student Number: c0920457-->
     <head>
         <title>Flavor Fusion BBQ: Specials</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/styles.css">
         <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Lato:ital@1&family=Roboto&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <div class="container">
-        <header>
-            <a href="index.html"><img src="images/logo.png" alt="logo" height="100px" width="100px"></a>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
+        <div id="container">
+        <!-- Mobile Navigation Menu -->
+        <nav class="mobile-nav">
+            <div id="menu-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="team.html">Our Team</a>
+                <a href="specials.html">Specials</a>
+                <a href="training.html">Training</a>
+                <a href="media.html">Media</a>
+                <a href="faqs.html">FAQs</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+
+            <!--Creating menu and calling hamburger function for mobile menu-->
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div> 
+            </a>
+        </nav>
+
+        <!-- Header for website name and logo -->
+        <header id="ffb-logo">
+            <a href="index.html"><img src="images/logo.png" id="header_image" alt="logo" height="190px"></a>
+        </header>
+
+        <!-- Tablet, Desktop Navigation Menu -->
+        <nav class="tablet-desktop" >
+			<ul>
+				<li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="team.html">Our Team</a></li>
                 <li><a href="specials.html">Specials</a></li>
@@ -24,37 +47,42 @@ Student Number: c0920457-->
                 <li><a href="media.html">Media</a></li>
                 <li><a href="faqs.html">FAQs</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+			</ul>
         </nav>
-        </header>
 
         <main>
-            <section class="weekly-sales">
-                <h1>Weekly Sales</h1>
-                <div class="product">
-                    <img src="images/bbq_1.jpg" alt="Product 1">
-                    <h3>Camp Chef At $49.99</h3>
-                    <p>Expanded chamber height <br>
-                        Modern control panel</p>
-                </div>
-        
-                <div class="product">
-                    <img src="images/bbq_2.jpg" alt="Product 2">
-                    <h3>Blaze At $39.99</h3>
-                    <p>With 304 stainless steel grill<br>
-                         keeping food from falling through the grates</p>
-                </div>
-        
-                <div class="product">
-                    <img src="images/bbq_3.jpg" alt="Product 3">
-                    <h3>Large Genn At $54.99</h3>
-                    <p>The modern ceramic design includes a firebox<br>
-                         fire ring, and deflector plate.</p>
-                </div>
-            </section>
-        
+            <!--Creating section box for weekly sales-->
+            <section class="sales">
+                <h1 id="sales-buy">Weekly Sales</h1>
+
+                <!--Creating the container cards for weekly sales-->
+                <div class="sales-container">
+                    <div class="sale">   
+                        <h3>Camp Chef At $49.99</h3>
+                        <img src="images/bbq_1.jpg" alt="Camp Chef" class="round">
+                        <p>Expanded chamber height,
+                            Modern control panel</p>
+                    </div>
+            
+                    <div class="sale">
+                        <h3>Blaze BarbeQ At $39.99</h3>
+                        <img src="images/bbq_2.jpg" alt="Blaze BBQ" class="round">
+                        <p>With 304 stainless steel grill food from falling through the grates and good energy
+                        </p>
+                    </div>
+                
+                    <div class="sale">
+                        <h3>Large Genn At $54.99</h3>
+                        <img src="images/bbq_3.jpg" alt="Large Genn" class="round"> 
+                        <p>The modern ceramic design includes a firebox fire ring, and deflector plate.</p>
+                    </div>
+                    </div>
+            </section>   
+        </div>
+
+            <!--Creating section for reasons to buy-->
             <section class="reasons">
-                <h1>Reasons to Buy From Us</h1>
+                <h1 id="reasons-buy">Reasons to Buy From Us</h1>
             
                 <div class="reasons-container">
                     <div class="reason">
@@ -68,8 +96,7 @@ Student Number: c0920457-->
                         <h3>Competitive Pricing</h3>
                         <p>Enjoy our BBQ maker equipment at competitive prices, where affordability meets quality. We offer exceptional value, making outdoor grilling accessible to all barbecue enthusiasts.</p>
                     </div>
-                
-            
+
                     <div class="reason">
                         <img src="images/customer-support.jpg" alt="Competitive Pricing">
                         <h3>Customer support</h3>
@@ -81,19 +108,19 @@ Student Number: c0920457-->
                         <h3>Reliability</h3>
                         <p>Reliability is at the core of our FLAVOUR FUSION, ensuring the consistent, hassle-free grilling experiences every time. Trust in equipment that stands the test of time, providing you with culinary perfection with every sizzle and sear.</p>
                     </div>
-            
             </section>
-            
         </main>
         
-
+        <!--Footer Content-->
         <footer>
-            &copy; Copyright 2099. All Rights Reserved.<br>
+            &copy; Copyright 2023. All Rights Reserved.<br>
 		    <a href="mailto:info@fusionflavourbbq.com">Request information</a><br>
             Kshitij Chaudhary &nbsp; &nbsp; c0920457
         </footer>
- 
     </div>  
+
+    <!--Integrating external script--> 
+    <script src="scripts/script.js"></script>
     </body>
 </html>
 

@@ -5,18 +5,41 @@ Student Number: c0920457-->
     <head>
         <title>Flavor Fusion BBQ: FAQs</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/styles.css">
         <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Lato:ital@1&family=Roboto&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <div class="container">
-        <header>
-            <a href="index.html"><img src="images/logo.png" alt="logo" height="150px" width="180px"></a>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
+            <!-- Mobile Navigation Menu -->
+            <nav class="mobile-nav">
+                <div id="menu-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="team.html">Our Team</a>
+                    <a href="specials.html">Specials</a>
+                    <a href="training.html">Training</a>
+                    <a href="media.html">Media</a>
+                    <a href="faqs.html">FAQs</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+
+                <!--Creating menu and calling hamburger function for mobile menu-->
+                <a class="menu-icon" onclick="hamburger()">
+                    <div>&#9776;</div> 
+                </a>
+            </nav>
+
+        <!-- Header for website name and logo -->
+        <header id="ffb-logo">
+            <a href="index.html"><img src="images/logo.png" id="header_image" alt="logo" height="190px"></a>
+        </header>
+
+        <!-- Tablet, Desktop Navigation Menu -->
+        <nav class="tablet-desktop" >
+			<ul>
+				<li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="team.html">Our Team</a></li>
                 <li><a href="specials.html">Specials</a></li>
@@ -24,21 +47,46 @@ Student Number: c0920457-->
                 <li><a href="media.html">Media</a></li>
                 <li><a href="faqs.html">FAQs</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+			</ul>
         </nav>
-        </header>
 
         <main>
-            <!-- Main Content Here-->
+            <!--Defining container for main content-->
+            <div id="faq-container">
+                <h1>Frequently Asked Questions</h1>
+
+                <div class="question-answer">
+                    <strong>Question: What makes Flavour Fusion BBQ equipment different from other brands?</strong>
+                    <p>Answer: Flavour Fusion BBQ stands out for its commitment to quality, innovation, and the pursuit of exceptional flavor. Our equipment is crafted with precision, using top-notch materials and cutting-edge technology to ensure a superior grilling experience.</p>
+                </div>
+            
+                <div class="question-answer">
+                    <strong>Question: How can I purchase Flavour Fusion BBQ products?</strong>
+                    <p>Answer: You can easily purchase our BBQ makers and accessories directly from our website. Visit our online store, browse our product catalog, and follow the simple checkout process to have your Flavour Fusion BBQ equipment delivered to your doorstep.</p>
+                </div>
+            
+                <div class="question-answer">
+                    <strong>Question: Are there any training sessions available for using Flavour Fusion BBQ products?</strong>
+                    <p>Answer: Absolutely! We offer exclusive BBQ training sessions to help you master the art of grilling. Check our Events page for upcoming sessions and follow the registration process to secure your spot.</p>
+                </div>
+            
+                <div class="question-answer">
+                    <strong>Question: How do I clean and maintain my Flavour Fusion BBQ equipment?</strong>
+                    <p>Answer: Proper maintenance is key to ensuring the longevity of your BBQ equipment. Consult the product manual for specific cleaning instructions, and check our Maintenance Tips page for additional guidance on keeping your Flavour Fusion BBQ gear in top condition.</p>
+                </div>    
+            </div>
         </main>
 
+        <!--Footer Content-->
         <footer>
-            &copy; Copyright 2099. All Rights Reserved.<br>
+            &copy; Copyright 2023. All Rights Reserved.<br>
 		    <a href="mailto:info@fusionflavourbbq.com">Request information</a><br>
             Kshitij Chaudhary &nbsp; &nbsp; c0920457
         </footer>
- 
-    </div>  
+        </div>  
+
+        <!--Integrating external script--> 
+        <script src="scripts/script.js"></script>
     </body>
 </html>
 

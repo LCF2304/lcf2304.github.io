@@ -1,0 +1,156 @@
+/*
+Kshitij Chaudhary
+c0920457
+*/
+
+/* Style rule for box sizing applies to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Style rules for mobile viewport */
+.tel-link{
+    background-color: #743333;
+    padding: 2%;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.tel-link a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+}
+
+/*Style rules for Contact */
+#contact {
+    text-align: center;
+}
+
+#contact h2{
+    color: #2347cc;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 5px #e6df15;
+    font-size: 1.8em;
+}
+
+#contact .email-link {
+    color: #666000;
+    text-decoration: none;
+}
+
+.map {
+    border: 2px solid #333;
+    width: 60%;
+}
+
+#form {
+    margin-top: 2%;
+    background-color: rgb(190, 196, 137);
+    padding: 2%;    
+}
+
+#form h2 {
+    color: #2347cc;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 5px #e6df15;
+    font-size: 1.8em;
+}
+
+fieldset, input, select, textarea {
+    margin-bottom: 1%;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+    font-family: cursive;
+}
+
+label, p, option{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.formGroup{
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    padding: 0.5em;
+}
+
+.textInput{
+    width: 20em;
+}
+
+.button-container {
+    text-align: center; 
+    margin-top: 10px;
+}
+
+#submit, #reset {
+    width: 150px; 
+    margin: 0 5px; 
+    border: none;
+    display: inline-block;
+    padding: 1%;
+    background-color: #333;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#submit:hover, #reset:hover {
+    background-color: #0056b3; /* Change hover color as needed */
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print {
+    /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+    .tablet-desktop {
+        display: block;
+    }
+
+    .tel-num {
+        font-size: 1.25em;
+    }
+
+    .map {
+        width: 600px;
+        height: 450px;
+    }
+}
+
+/* Media query for Desktop viewport */
+@media screen and (min-width: 1015px), print {
+
+    form {
+        width: auto;
+    }
+
+    .form-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+    }
+
+    .btn {
+        grid-column: 1 / span 3;
+    }
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px) {
+    table {
+        width: 80%;
+    }
+}
+}

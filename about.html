@@ -5,18 +5,41 @@ Student Number: c0920457-->
     <head>
         <title>Flavor Fusion BBQ: About</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/about.css">
         <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Lato:ital@1&family=Roboto&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <div class="container">
-        <header>
-            <a href="index.html"><img src="images/logo.png" alt="logo" height="150px" width="180px"></a>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
+         <!-- Mobile Navigation Menu --> 
+         <nav class="mobile-nav">
+            <div id="menu-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="team.html">Our Team</a>
+                <a href="specials.html">Specials</a>
+                <a href="training.html">Training</a>
+                <a href="media.html">Media</a>
+                <a href="faqs.html">FAQs</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <!--Creating menu and calling hamburger function for mobile menu-->
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div> 
+            </a>
+        </nav>
+
+        <!-- Header for website name and logo -->
+        <header id="ffb-logo">
+            <a href="index.html"><img src="images/logo.png" id="header_image" alt="logo" height="190px"></a>
+        </header>
+
+        <!-- Tablet, Desktop Navigation Menu -->
+        <nav class="tablet-desktop" >
+			<ul>
+				<li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="team.html">Our Team</a></li>
                 <li><a href="specials.html">Specials</a></li>
@@ -24,21 +47,68 @@ Student Number: c0920457-->
                 <li><a href="media.html">Media</a></li>
                 <li><a href="faqs.html">FAQs</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+			</ul>
         </nav>
-        </header>
 
         <main>
-            <!-- Main Content Here-->
+            <!-- For Mobile viewport-->
+            <div class="mobile">
+                <section class="company-section">
+                    <div class="about-container">
+                        <div class="about-text">
+                            <h1>About Flavor Fusion BBQ</h1>
+                                <p>Welcome to Flavor Fusion BBQ, your one-stop shop for premium BBQ maker equipment. At Flavor Fusion, we are passionate about enhancing your grilling experience by providing top-notch tools and accessories for barbecue enthusiasts. Our commitment to quality and innovation has made us a trusted name in the BBQ community.</p>
+                            <h3>30 days easy return</h3>
+                                <p>Order Online to get it delivered to your home</p>
+                            <p class="tel-link"><a href="tel:123456789">(123)456-789</a></p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--For desktop viewport-->
+            <div class="tablet-desktop">
+                <section class="company-section">
+                    <div class="about-container">
+                        <div class="about-text">
+                            <h1>About Flavor Fusion BBQ</h1>
+                                <p>Welcome to Flavor Fusion BBQ, your one-stop shop for premium BBQ maker equipment. At Flavor Fusion, we are passionate about enhancing your grilling experience by providing top-notch tools and accessories for barbecue enthusiasts. Our commitment to quality and innovation has made us a trusted name in the BBQ community. Whether you're a seasoned grill master or just starting your BBQ journey, we have a wide range of high-quality products to suit your needs.</p>
+                                <p>Discover the perfect blend of flavor and functionality with our selection of grills, smokers, accessories, and more. We strive to bring you the latest in BBQ technology, ensuring that your outdoor cooking adventures are not only delicious but also filled with the joy of creating memorable moments. Join us at Flavor Fusion BBQ, where passion meets precision, and every BBQ experience becomes a celebration of flavor.</p>
+                        </div>
+                    <div class="about-image">
+                        <img src="images/about-image.jpg" alt="Company Image">
+                    </div>
+                </div>
+                </section>
+
+                <!--Reasons section-->
+                <section id="reasons-section">
+                    <h2>Six Reasons Why You Should Shop with Us</h2>
+                    <p>We make Shopping experience fun! We offer various brands and types of BBQs,
+                        Contact us today to visit for <span class="action">FREE!</span> 
+                    </p>
+                    <p>We provide:</p>
+                    <ul>
+                        <li>Exceptional Quality: Our BBQ maker equipment is crafted with precision and built to last, ensuring you enjoy the highest quality grilling experience.</li>
+                        <li>Wide Selection: Choose from a diverse range of grills, smokers, accessories, and more, catering to both beginners and seasoned BBQ enthusiasts.</li>
+                        <li>Innovative Technology: Stay ahead in the world of BBQ with our cutting-edge products that incorporate the latest advancements in grilling technology.</li>
+                        <li>Expert Advice: Our knowledgeable team is here to assist you, providing expert advice and guidance to help you make informed decisions about your BBQ equipment.</li>
+                        <li>Customer Satisfaction: We prioritize your satisfaction and strive to create a seamless shopping experience, from browsing our products to after-sales support.</li>
+                        <li>Community Connection: Join our BBQ community, where enthusiasts share tips, recipes, and stories, creating a vibrant space for everyone passionate about outdoor cooking.</li>
+                    </ul>
+                </section>
+            </div>
         </main>
 
+        <!--Footer Content-->
         <footer>
-            &copy; Copyright 2099. All Rights Reserved.<br>
+            &copy; Copyright 2023. All Rights Reserved.<br>
 		    <a href="mailto:info@fusionflavourbbq.com">Request information</a><br>
             Kshitij Chaudhary &nbsp; &nbsp; c0920457
         </footer>
- 
-    </div>  
+    </div>
+        <!--Integrating external script--> 
+    <script src="scripts/script.js"></script>
+    </div>
     </body>
 </html>
 

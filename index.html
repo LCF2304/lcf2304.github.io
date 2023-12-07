@@ -6,17 +6,40 @@ Student Number: c0920457-->
         <title>Flavor Fusion BBQ</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Lato:ital@1&family=Roboto&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <div class="container">
-        <header>
-            <a href="index.html"><img src="images/logo.png" alt="logo" height="150px" width="180px"></a>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
+        <div id="container">
+        <!-- Mobile Navigation Menu -->
+        <nav class="mobile-nav">
+            <div id="menu-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="team.html">Our Team</a>
+                <a href="specials.html">Specials</a>
+                <a href="training.html">Training</a>
+                <a href="media.html">Media</a>
+                <a href="faqs.html">FAQs</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+
+            <!--Creating menu and calling hamburger function for mobile menu-->
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div> 
+            </a>
+        </nav>
+
+        <!--Creating menu and calling hamburger function for mobile menu-->
+        <header id="ffb-logo">
+            <a href="index.html"><img src="images/logo.png" id="header_image" alt="logo" height="190px"></a>
+        </header>
+
+        <!-- Header for website name and logo -->
+        <nav class="tablet-desktop" >
+			<ul>
+				<li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="team.html">Our Team</a></li>
                 <li><a href="specials.html">Specials</a></li>
@@ -24,26 +47,31 @@ Student Number: c0920457-->
                 <li><a href="media.html">Media</a></li>
                 <li><a href="faqs.html">FAQs</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+			</ul>
         </nav>
-        </header>
 
         <main>
-            <div class="image-container">
+            <!--Adding image by making image container-->
+            <div id="image-container">
                 <img src="images/banner-images.jpeg" alt="bbq-banner-image" width="100%" height="600px">
+                
+                <!--Adding text in the image-->
                 <div class="text-overlay">
                     <h2>Welcome to Flavour Fusion BBQ. The land of unlimited meat and platters</h2>
                 </div>
             </div>
         </main>
-
+        
+         <!--Footer Content-->
         <footer>
-            &copy; Copyright 2099. All Rights Reserved.<br>
+            &copy; Copyright 2023. All Rights Reserved.<br>
 		    <a href="mailto:info@fusionflavourbbq.com">Request information</a><br>
             Kshitij Chaudhary &nbsp; &nbsp; c0920457
         </footer>
- 
-    </div>  
+    </div> 
+    
+    <!--Integrating external script--> 
+    <script src="scripts/script.js"></script> 
     </body>
 </html>
 

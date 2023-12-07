@@ -5,18 +5,42 @@ Student Number: c0920457-->
     <head>
         <title>Flavor Fusion BBQ: Contact</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/contact.css">
         <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Lato:ital@1&family=Roboto&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <div class="container">
-        <header>
-            <a href="index.html"><img src="images/logo.png" alt="logo" height="150px" width="180px"></a>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
+         <!-- Mobile Navigation Menu --> 
+         <nav class="mobile-nav">
+            <div id="menu-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="team.html">Our Team</a>
+                <a href="specials.html">Specials</a>
+                <a href="training.html">Training</a>
+                <a href="media.html">Media</a>
+                <a href="faqs.html">FAQs</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+
+            <!--Creating menu and calling hamburger function for mobile menu-->
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div> 
+            </a>
+        </nav>
+
+        <!-- Header for website name and logo -->
+        <header id="ffb-logo">
+            <a href="index.html"><img src="images/logo.png" id="header_image" alt="logo" height="190px"></a>
+        </header>
+
+        <!-- Tablet, Desktop Navigation Menu -->
+        <nav class="tablet-desktop" >
+			<ul>
+				<li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="team.html">Our Team</a></li>
                 <li><a href="specials.html">Specials</a></li>
@@ -24,21 +48,91 @@ Student Number: c0920457-->
                 <li><a href="media.html">Media</a></li>
                 <li><a href="faqs.html">FAQs</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+			</ul>
         </nav>
-        </header>
 
         <main>
-            <!-- Main Content Here-->
+            <div id="contact">
+                <h2>Call us Today and get promotional discounts</h2>
+                <h4 class="mobile tel-link"><a href="5193815957">(519) 381-5957</a></h4>
+				<h4 class="tablet-desktop tel-num">(519) 381-5957</h4>
+                <p>Email: <a href=”mailto:info@flavourfusionbbq.com” class="email-link">info@flavourfusionbbq.com</a></p>
+                <p>We are located at: Finch Drive, Sarnia, ON, Canada</p>
+                
+                <!--Embeding map-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2919.4469919107864!2d-82.3543043886744!3d42.96885689630288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8825830f2089b36b%3A0xa299fe9040d7bd5c!2sFinch%20Dr%2C%20Sarnia%2C%20ON!5e0!3m2!1sen!2sca!4v1701832991483!5m2!1sen!2sca" 
+                height="300px" allowfullscreen class="map"></iframe>
+            </div>
+
+            <!--Creating Forms Container-->
+            <div id="form">
+                <h2>Submit your message ! Complaints ! Appreciation</h2>
+                <form class="form-grid">
+                    <fieldset>
+                        <legend>Customer Information</legend>
+                        <div class="formGroup">
+                            <label for="fName">Full Name:</label>
+                            <input type="text" name="fName" id="fName" class="textInput" autofocus required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" class="textInput" required placeholder="abc@abc.com">
+                        </div>
+                        <div class="formGroup">
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone" class="textInput" required size="10" placeholder="1234567890">
+                        </div>
+                        <div>
+                        <p>Preferred Contact Method:</p>
+                        <input type="radio" id="email-method" name="contact-method" value="email" checked>
+                        <label for="email-method">Email</label>
+                        <input type="radio" id="phone-method" name="contact-method" value="phone">
+                        <label for="phone-method">Phone</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Your BBQ Taste</legend>
+                        <p>Let us know your favourite BBQ type:</p>
+                        <label for="smoked"><input type="checkbox" name="taste" id="smoked" value="Smoked">SMOKED</label>
+                        <label for="grilled"><input type="checkbox" name="taste" id="Grilled" value="Grilled">GRILLED</label>
+                        <label for="charcoal"><input type="checkbox" name="taste" id="charcoal" value="charcoal">CHARCOAL</label>
+                        <br> <br>
+                        <label for="visitng-date">Visiting Date:</label>
+                        <input type="date" id="visiting-date" name="visiting-date">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Information Section</legend>
+                        <label for="identify">Who referred you?</label>
+                        <select name="identify" id="identify">
+                            <option value="website">Website</option>
+                            <option value="employee">Employee</option>
+                            <option value="social-media">Social Media</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <legend>Your Feedback!</legend>
+                        <textarea id="feedback" name="feedback" rows="8" cols="40"></textarea>
+                    </fieldset>
+                    
+                <div class="btn-container">
+                    <input type="submit" id="submit" value ="Submit" class="btn">
+                    <input type="reset" id="reset" value="Reset" class="reset-btn">
+                </div>     
+                </form>
+            </div>
         </main>
 
+        <!--Footer Content-->
         <footer>
-            &copy; Copyright 2099. All Rights Reserved.<br>
+            &copy; Copyright 2023. All Rights Reserved.<br>
 		    <a href="mailto:info@fusionflavourbbq.com">Request information</a><br>
             Kshitij Chaudhary &nbsp; &nbsp; c0920457
-        </footer>
- 
-    </div>  
+        </footer> 
+    </div>
+    
+    <!--Integrating external script-->   
+    <script src="scripts/script.js"></script>
     </body>
 </html>
 

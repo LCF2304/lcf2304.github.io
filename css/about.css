@@ -1,0 +1,119 @@
+/*
+Kshitij Chaudhary
+c0920457
+*/
+/* Style rules for About Page */
+
+/*Style rules for About section*/
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    margin: 20px 0;
+}
+
+.about-text {
+    flex: 1;
+    margin-right: 20px;
+    margin-top: 3em;
+    text-align: center; 
+}
+
+.about-text h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    margin: 2em;
+    margin-top: 5em;
+    padding: 1.2em;
+    box-shadow: 0 0 5px #333;
+}
+
+/*Style rules for Reasons to Buy Section*/
+#reasons-section {
+    clear: left;
+    background: linear-gradient(to right, #806161, #46632b);
+    padding: 1%;
+    color: #fff;
+}
+
+#reasons-section h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#reasons-section ul {
+    margin-left: 10%;
+}
+
+/*Style rule for heading 3 tag of Mobile class*/
+.mobile h3{
+    text-shadow: 5px 5px 8px #ccc;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*Style rule for Telephone link*/
+.tel-link{
+    background-color: #404040;
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.tel-link a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+}
+
+
+
+/* Media Query for Tablet Viewport */
+    @media screen and (min-width: 630px), print {
+    /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+.tablet-desktop {
+    display: block;
+}
+
+.mobile, .mobile-nav {
+    display: none;
+}
+
+.action {
+    font-size: 1.3em;
+    color: #c3eb3f;
+    font-weight: bold;
+}
+}
+
+
+/* Media query for Desktop viewport */
+@media screen and (min-width: 1015px), print {
+    nav a {
+        color: #333;
+        text-decoration: none;
+        padding: 10px 15px;
+        transition: color 0.3s ease;
+    }
+    
+    nav a:hover {
+        color: #FF5722;
+    }
+
+    #reasons-section ul {
+        margin-left: 5%;
+    }
+
+    /* Media Query for Large Desktop Viewports */
+     @media screen and (min-width: 1921px) {
+
+     }
+}
+
+
+    

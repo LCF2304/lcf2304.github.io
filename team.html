@@ -5,18 +5,42 @@ Student Number: c0920457-->
     <head>
         <title>Flavor Fusion BBQ: Team</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/team.css">
         <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Lato:ital@1&family=Roboto&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     </head>
-
+    
     <body>
         <div class="container">
-        <header>
-            <a href="index.html"><img src="images/logo.png" alt="logo" height="150px" width="180px"></a>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
+        <!-- Mobile Navigation Menu -->
+        <nav class="mobile-nav">
+            <div id="menu-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="team.html">Our Team</a>
+                <a href="specials.html">Specials</a>
+                <a href="training.html">Training</a>
+                <a href="media.html">Media</a>
+                <a href="faqs.html">FAQs</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+
+            <!--Creating menu and calling hamburger function for mobile menu-->
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div> 
+            </a>
+        </nav>
+
+        <!-- Header for website name and logo -->
+        <header id="ffb-logo">
+            <a href="index.html"><img src="images/logo.png" id="header_image" height="190px" alt="logo"></a>
+        </header>
+
+        <!-- Tablet, Desktop Navigation Menu -->
+        <nav class="tablet-desktop" >
+			<ul>
+				<li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="team.html">Our Team</a></li>
                 <li><a href="specials.html">Specials</a></li>
@@ -24,21 +48,60 @@ Student Number: c0920457-->
                 <li><a href="media.html">Media</a></li>
                 <li><a href="faqs.html">FAQs</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+			</ul>
         </nav>
-        </header>
 
         <main>
-            <!-- Main Content Here-->
+            <!--Creating the section for Who We Are-->>
+            <section class="team">
+                <article>
+                        <h1> Who We Are: Igniting Passion for Flavorful BBQ Creations!</h1>
+                    
+                    <div class="our-team">
+                        <p>Welcome to Flavour Fusion BBQ, where our journey is fired up by a team of dedicated individuals with a shared love for exceptional barbecue experiences. We are more than just a company; we're a community of culinary enthusiasts, grill masters, and innovators committed to redefining the art of BBQ. Our diverse team brings together a rich tapestry of skills, from culinary expertise and engineering ingenuity to a deep understanding of the BBQ culture. With a passion for flavor that knows no bounds, we embark on a mission to elevate your grilling adventures. At Flavour Fusion BBQ, we're not just creating BBQ maker equipment; we're crafting a flavorful journey for you to savor, share, and celebrate.</p>
+                    </div>
+
+                    <div class="figure_ph">
+                        <figure>
+                            <img src="images/kshitij.jpg" alt="Executive Director">
+                            <figcaption>Kshitij Chaudhary<br> Executive Director</figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="images/mahan.jpg" alt="Leadership Lead">
+                            <figcaption>Mahan Timalsena<br> Leadership Lead</figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="images/romika.jpg" alt="Marketing Head">
+                            <figcaption>Romika Chaudhary<br> Marketing Head</figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="images/sujan.jpg" alt="Sales Representative">
+                            <figcaption>Sujan Basnet<br> Sales Representative</figcaption>
+                        </figure>
+                    </div>
+                </article>
+            </section>
+
+            <aside class="tablet-desktop grid-item4">
+                <h1 id="story-team">Our Story: A Sizzling Journey of Passion and Innovation</h1>
+                    <p>Flavour Fusion BBQ was born on 2023 from a shared love for the art of barbecue and a burning desire to redefine how we experience those smoky, mouthwatering flavors. Our story began with a group of passionate individuals who, fueled by a vision of elevating the BBQ experience, came together to form Flavour Fusion BBQ. From the early sparks of inspiration to the flames of innovation, every chapter of our journey is etched with dedication and a commitment to excellence.
+                </p>
+            </aside>
         </main>
 
+        <!--Footer Content-->
         <footer>
-            &copy; Copyright 2099. All Rights Reserved.<br>
+            &copy; Copyright 2023. All Rights Reserved.<br>
 		    <a href="mailto:info@fusionflavourbbq.com">Request information</a><br>
             Kshitij Chaudhary &nbsp; &nbsp; c0920457
         </footer>
- 
-    </div>  
+    </div> 
+
+    <!--Integrating external script-->  
+    <script src="scripts/script.js"></script>
     </body>
 </html>
 

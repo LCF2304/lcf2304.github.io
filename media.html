@@ -5,40 +5,111 @@ Student Number: c0920457-->
     <head>
         <title>Flavor Fusion BBQ: Media</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/styles.css">
         <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Lato:ital@1&family=Roboto&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <div class="container">
-        <header>
-            <a href="index.html"><img src="images/logo.png" alt="logo" height="150px" width="180px"></a>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="team.html">Our Team</a></li>
-                <li><a href="specials.html">Specials</a></li>
-                <li><a href="training.html">Training</a></li>
-                <li><a href="media.html">Media</a></li>
-                <li><a href="faqs.html">FAQs</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-        </header>
+       <!-- Mobile Nav --> 
+       <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="team.html">Our Team</a>
+            <a href="specials.html">Specials</a>
+            <a href="training.html">Training</a>
+            <a href="media.html">Media</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <!--Creating menu and calling hamburger function for mobile menu-->
+        <a class="menu-icon" onclick="hamburger()">
+            <div>&#9776;</div> 
+        </a>
+    </nav>
+
+    <!-- Header for website name and logo -->
+    <header id="ffb-logo">
+        <a href="index.html"><img src="images/logo.png" id="header_image" alt="logo" height="190px"></a>
+    </header>
+
+    <!-- Tablet, Desktop Navigation Menu -->
+    <nav class="tablet-desktop" >
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="specials.html">Specials</a></li>
+            <li><a href="training.html">Training</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
 
         <main>
-            <!-- Main Content Here-->
+            <!--Creating the container for Video Intro-->
+            <div id="media-video">
+                <h1>Watch our Intro Video Below.</h1>
+                <video controls poster="images/bbq.jpg" style="width: 95%;">
+                    <source src="media/grill-video.mp4" type="video/mp4">
+                    <p>Your browser does not support the video element.</p>
+                </video>
+            </div>
+
+            <!--Creating section and info for Audio for the tablet and desktop viewport-->
+            <section id="bbq-media" class="tablet-desktop">
+                <h1>BBQs Sounds</h1>
+                <p>The following are common sounds we can listen while making BBQs. Let's taste it with the sound.</p>
+                <dl>
+                    <dt>Fusion Bonfire</dt>
+                    <dd>
+                        The bonfire sound of a BBQ, often referred to as the crackling or sizzling sound, is a distinctive auditory element associated with outdoor grilling and barbecuing. This sound is a result of various processes happening simultaneously during the cooking of food over an open flame or hot coals.
+                    </dd>
+                    <div class="music-center">
+                        <audio class="music" controls>
+                            <source id="music-src" src="media/bonfire.mp3" type="audio/mp3">
+                            Your browser does not support the audio tag.
+                        </audio>    
+                    </div>              
+
+                    <dt>Fusion Cooking Oil</dt>
+                    <dd>Brushing your BBQ items with cooking oil before grilling enhances moisture, prevents sticking, and creates a flavorful sear. Different oils add unique tastes, while ensuring even cooking and appealing grill marks.</dd>
+                    
+                    <div class="music-center">
+                        <audio class="music" controls>
+                            <source id="music-src" src="media/bonfire.mp3" type="audio/mp3">
+                            Your browser does not support the audio tag.
+                        </audio>
+                    </div>
+                
+                    <dt>Fusion Sizzler Bacon</dt>
+                    <dd>
+                        BBQ sizzler bacon is a mouthwatering delight, bringing the irresistible smokiness of barbecue to crispy bacon strips. Perfectly grilled, it adds a savory and flavorful touch to any dish, elevating the classic bacon experience with the essence of outdoor cooking.</dd>
+                        
+                    <div class="music-center">
+                        <audio class="music" controls>
+                            <source id="music-src" src="media/sizzler-bacon.mp3" type="audio/mp3">
+                            Your browser does not support the audio tag.
+                        </audio>
+                    </div>
+                </dl>               
+            </section>
         </main>
 
+        <!--Footer Content-->
         <footer>
-            &copy; Copyright 2099. All Rights Reserved.<br>
+            &copy; Copyright 2023. All Rights Reserved.<br>
 		    <a href="mailto:info@fusionflavourbbq.com">Request information</a><br>
             Kshitij Chaudhary &nbsp; &nbsp; c0920457
         </footer>
- 
     </div>  
+    
+    <!--Integrating external script--> 
+    <script src="scripts/script.js"></script>
     </body>
 </html>
 

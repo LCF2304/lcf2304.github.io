@@ -5,40 +5,217 @@ Student Number: c0920457-->
     <head>
         <title>Flavor Fusion BBQ: Training</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/training.css">
         <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Lato:ital@1&family=Roboto&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     </head>
-
+    
     <body>
         <div class="container">
-        <header>
-            <a href="index.html"><img src="images/logo.png" alt="logo" height="150px" width="180px"></a>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="team.html">Our Team</a></li>
-                <li><a href="specials.html">Specials</a></li>
-                <li><a href="training.html">Training</a></li>
-                <li><a href="media.html">Media</a></li>
-                <li><a href="faqs.html">FAQs</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-        </header>
+            <!-- Mobile Navigation Menu -->
+            <nav class="mobile-nav">
+                <div id="menu-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="team.html">Our Team</a>
+                    <a href="specials.html">Specials</a>
+                    <a href="training.html">Training</a>
+                    <a href="media.html">Media</a>
+                    <a href="faqs.html">FAQs</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                
+                <!--Creating menu and calling hamburger function for mobile menu-->
+                <a class="menu-icon" onclick="hamburger()">
+                    <div>&#9776;</div> 
+                </a>
+            </nav>
+
+            <!-- Header for website name and logo -->
+            <header id="ffb-logo">
+                <a href="index.html"><img src="images/logo.png" id="header_image" alt="logo" height="190px"></a>
+            </header>
+
+            <!-- Tablet, Desktop Navigation Menu -->
+            <nav class="tablet-desktop" >
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="specials.html">Specials</a></li>
+                    <li><a href="training.html">Training</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
 
         <main>
-            <!-- Main Content Here-->
-        </main>
+            <!--Training For Mobile Viewport-->
+            <div class="mobile">
+                <section class="prod-training">
+                    <h3>Product Training Schedule</h3>
+                    <p>GrillMaster Propane Smoker: SMT 10am &amp; 12pm</p>
+                    <p>SmokeInfusion Wood Pellet Grill: WTM 8am &amp; 10pm</p>
+                    <p>CharcoalChampion Offset Smoker: SS 5am &amp; 7:15pm</p>
+                    <p>FlameCraft Infrared Gas Grill: MTF 4am &amp; 6pm</p>
+                    <p>SearMaster Cast Iron Griddle: SMT 6am &amp; 8pm</p>
+                    <p>RotisserieRevolution BBQ Spit: MWF 2am &amp; 4pm</p>
+                </section>
+            </div> 
+       
+            <!--Training for Tablet and Desktop Mode-->
+            <div class="tablet-desktop">
 
+                <!--Creating Table-->
+                <table>
+                    <caption>Product Training Schedule</caption>
+                    <tr><!-- Data Row -->
+                        <th>Product</th>
+                        <th>Date</th>
+                        <th>Price</th>
+                        <th>Length</th>
+                        <th>Room</th>
+                        <th>Instructor</th>
+                    </tr>
+
+                    <tr><!--Row 1-->
+                        <td>GrillMaster Propane Smoker</td>
+                        <td>2024-01-01</td>
+                        <td>$499.99</td>
+                        <td>2 hours</td>
+                        <td>Room 101</td>
+                        <td>John Doe</td>
+                    </tr>
+
+                    <tr><!--Row 2-->
+                        <td>SmokeInfusion Wood Pellet Grill</td>
+                        <td>2024-02-01</td>
+                        <td>$599.99</td>
+                        <td>3 hours</td>
+                        <td>Room 102</td>
+                        <td>Jane Smith</td>
+                    </tr>
+
+                    <tr><!--Row 3-->
+                        <td>CharcoalChampion Offset Smoker</td>
+                        <td>2024-03-01</td>
+                        <td>$549.99</td>
+                        <td>2.5 hours</td>
+                        <td>Room 103</td>
+                        <td>Bob Johnson</td>
+                    </tr>
+
+                    <tr><!--Row 4-->
+                        <td>FlameCraft Infrared Gas Grill</td>
+                        <td>2024-04-01</td>
+                        <td>$449.99</td>
+                        <td>2 hours</td>
+                        <td>Room 104</td>
+                        <td>Alice Lee</td>
+                    </tr>
+
+                    <tr><!--Row 5-->
+                        <td>SearMaster Cast Iron Griddle</td>
+                        <td>2024-05-01</td>
+                        <td>$699.99</td>
+                        <td>3.5 hours</td>
+                        <td>Room 105</td>
+                        <td>Charlie Brown</td>
+                    </tr>
+
+                    <tr><!--Row 6-->
+                        <td>RotisserieRevolution BBQ Spit</td>
+                        <td>2024-06-01</td>
+                        <td>$799.99</td>
+                        <td>4 hours</td>
+                        <td>Room 106</td>
+                        <td>Diana Miller</td>
+                    </tr>
+
+                    <tr><!--Row 7-->
+                        <td>TempTech Digital Meat Thermometer</td>
+                        <td>2024-07-01</td>
+                        <td>$899.99</td>
+                        <td>4.5 hours</td>
+                        <td>Room 107</td>
+                        <td>Eric Davis</td>
+                    </tr>
+
+                    <tr><!--Row 8-->
+                        <td>SauceMist Flavor Injector</td>
+                        <td>2024-08-01</td>
+                        <td>$749.99</td>
+                        <td>3 hours</td>
+                        <td>Room 108</td>
+                        <td>Fiona Johnson</td>
+                    </tr>
+
+                    <tr><!--Row 9-->
+                        <td>RackMaster Rib Rack</td>
+                        <td>2024-09-01</td>
+                        <td>$899.99</td>
+                        <td>4.5 hours</td>
+                        <td>Room 109</td>
+                        <td>George Anderson</td>
+                    </tr>
+
+                    <tr><!--Row 10-->
+                        <td>SmokeSignal Wireless BBQ Thermometer</td>
+                        <td>2024-10-01</td>
+                        <td>$999.99</td>
+                        <td>5 hours</td>
+                        <td>Room 110</td>
+                        <td>Hannah White</td>
+                    </tr>
+
+                    <tr><!--Row 11-->
+                        <td>GrateGuru Grill Brush</td>
+                        <td>2024-11-01</td>
+                        <td>$799.99</td>
+                        <td>3.5 hours</td>
+                        <td>Room 111</td>
+                        <td>Ian Taylor</td>
+                    </tr>
+
+                    <tr><!--Row 12-->
+                        <td>PitMaster BBQ Pit Controller</td>
+                        <td>2024-12-01</td>
+                        <td>$599.99</td>
+                        <td>3 hours</td>
+                        <td>Room 112</td>
+                        <td>Jessica Brown</td>
+                    </tr>
+                </table>
+
+                <!--Creating registration information section-->
+                <section class="registration-section">
+                    <h1>Join the BBQ Mastery Training Sessions!</h1>
+                    <p>Ready to elevate your grilling skills to new heights? Flavour Fusion BBQ proudly offers exclusive training sessions to help you become a barbecue maestro. Register now to embark on a flavorful journey filled with sizzling techniques, expert tips, and hands-on experience with our top-of-the-line BBQ makers.</p>
+                    
+                    <!--Unordered list for the registration steps-->
+                    <ul>
+                        <li><span class="action"> Your Session:</span> Explore our upcoming training sessions and select the one that fits your schedule and interests.</li>
+                        <li><span class="action">Complete the Registration Form:</span> Fill out the simple registration form below, providing your name, contact details, and any specific topics or skills you'd like us to cover during the training.</li>
+                        <li><span class="action">Secure Your Spot:</span> Once your registration is complete, you'll receive a confirmation email with details on how to secure your spot in the upcoming BBQ training session.</li>
+                        <li><span class="action">Get Ready to Grill:</span> Prepare for an immersive experience where you'll learn the art of barbecue from seasoned professionals. Bring your enthusiasm, and we'll provide the knowledge and skills to turn you into a BBQ master.</li>
+                    </ul>
+                    <p>If you have any questions or need assistance with the registration process, feel free to <a href="contact.html"><span class="action">contact us</span></a>.</p>
+                </section>      
+            </div>
+        </main>
+        
+        <!--Footer Content-->
         <footer>
-            &copy; Copyright 2099. All Rights Reserved.<br>
+            &copy; Copyright 2023. All Rights Reserved.<br>
 		    <a href="mailto:info@fusionflavourbbq.com">Request information</a><br>
             Kshitij Chaudhary &nbsp; &nbsp; c0920457
         </footer>
- 
-    </div>  
+        </div> 
+
+        <!--Integrating external script--> 
+        <script src="scripts/script.js"></script> 
     </body>
 </html>
 
